@@ -2,7 +2,7 @@ package Questions_Arrays;
 
 import java.util.Arrays;
 
-public class Swap_Alternte_Values {
+public class Swap_Alternate_Values {
     public static void main(String[] args) {
         int[] evenArr = {1,2,3,4,5,6};
         int[] oddArr = {2,3,6,8,3};
