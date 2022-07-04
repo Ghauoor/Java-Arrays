@@ -3,7 +3,7 @@ package Learning_Arrays;
 
 public class Single_Dimension_Array {
     int[] array = null;
-    int a;
+
 
     //This Constructor init the array with minimum value
     public Single_Dimension_Array(int sizeOfArr){
