@@ -1,6 +1,5 @@
 package Learning_Arrays;
 
-import java.util.Arrays;
 
 public class Parent_Of_Two_D_Array {
     public static void main(String[] args) {

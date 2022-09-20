@@ -3,9 +3,9 @@ package Questions_Arrays;
 public class Max_Min_Item {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 44, 5, 64, 3};
+        int[] arr = {1, 2, 3, 44, 5, 64, 3, 4};
 
-//       ?
+
         maxVal(arr);
         System.out.println("Max value between range is : " + maxValInRange(arr, 2, 4));
 

@@ -58,7 +58,6 @@ public class Single_Dimension_Array {
 
     public void deleteVal(int val){
         try{
-
             array[val] = Integer.MIN_VALUE;
             System.out.println("The Value has been deleting successfully...");
 

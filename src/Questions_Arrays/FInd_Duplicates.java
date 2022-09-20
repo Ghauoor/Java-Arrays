@@ -31,7 +31,7 @@ public class FInd_Duplicates {
     }
     public static int findDuplicate(ArrayList<Integer> arr) {
         int ans = 0;
-        for (int i = 0 ;i < arr.size(); i++){
+        for (int i = 0; i < arr.size(); i++){
             ans = ans ^ arr.get(i);
         }
 
