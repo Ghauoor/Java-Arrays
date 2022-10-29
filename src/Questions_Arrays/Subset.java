@@ -29,8 +29,6 @@ public class Subset {
                 outer.add(internal);
             }
         }
-
-
         return outer;
     }
 }
