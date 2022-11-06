@@ -14,7 +14,6 @@ public class Subset {
         }
 
     }
-
     static List<List<Integer>> subSet(int[] arr) {
         List<List<Integer>> outer = new ArrayList<>();
         outer.add(new ArrayList<>());
