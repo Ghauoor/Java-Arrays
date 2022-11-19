@@ -3,7 +3,7 @@ package Algos;
 public class Kadanes_Algorithm {
     public static void main(String[] args) {
 
-        int[] arr = {-2, -3, 4, -1, -2, 1, 5, -3};
+        int[] arr = {-2, -4, 5, 9, -8};
 
         maxSumArray(arr);
 
@@ -11,7 +11,7 @@ public class Kadanes_Algorithm {
 
     static void maxSumArray(int[] arr) {
 
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
         int curSum = 0;
         int start = 0, s = 0;
         int end = 0;
@@ -32,8 +32,7 @@ public class Kadanes_Algorithm {
             }
         }
 
-        System.out.println("Maximum contiguous sum is "
-                + maxSum);
+        System.out.println("Maximum contiguous sum is " + maxSum);
         System.out.println("Starting index " + start);
         System.out.println("Ending index " + end);
     }
