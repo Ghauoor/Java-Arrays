@@ -2,7 +2,7 @@ package Algos;
 
 public class Moores_Voting {
     public static void main(String[] args) {
-        int[] arr = {5, 5, 6};
+        int[] arr = {1, 1, 1, 1, 1, 2, 3, 2};
 
         System.out.println(mooresAlgo(arr));
 
@@ -42,6 +42,15 @@ public class Moores_Voting {
                 count--;
             }
         }
-        return candidate;
+        count = 0;
+
+        for (int j : arr) {
+            if (j == candidate)
+                count++;
+        }
+
+        if (count > (arr.length / 2))
+            return candidate;
+        return -1;
     }
 }
