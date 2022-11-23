@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Square_Sort {
     public static void main(String[] args) {
-        int[] arr = {-10, -5, -2, 1, 4, 9};
+        int[] arr = {-10, -5, -2, 1, 2, 9};
         System.out.println(Arrays.toString(sortSquare(arr)));
     }
 
