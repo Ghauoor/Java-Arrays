@@ -20,9 +20,8 @@ public class L_To_R_Sum {
 
     static int querySum(int[] arr, int leftIndex, int rightIndex) {
         prefixSumLToR(arr);
-        int ans = arr[rightIndex] - arr[leftIndex - 1];
 
-        return ans;
+        return arr[rightIndex] - arr[leftIndex - 1];
     }
 
 
