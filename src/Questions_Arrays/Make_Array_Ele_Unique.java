@@ -3,6 +3,9 @@ package Questions_Arrays;
 import java.util.Arrays;
 
 public class Make_Array_Ele_Unique {
+    public static void main(String[] args) {
+
+    }
     public int minIncrements(int[] arr, int n) {
         Arrays.sort(arr);
 
@@ -18,5 +21,15 @@ public class Make_Array_Ele_Unique {
         }
 
         return ans;
+    }
+
+    public int minIncrementForUnique(int[] A) {
+        Arrays.sort(A);
+        int res = 0, need = 0;
+        for (int a : A) {
+            res += Math.max(need - a, 0);
+            need = Math.max(a, need) + 1;
+        }
+        return res;
     }
 }
