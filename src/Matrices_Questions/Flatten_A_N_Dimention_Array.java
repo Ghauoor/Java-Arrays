@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Flatten_A_N_Dimention_Array {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         //declare and initialize the 2D array that needs to be flattened
         Integer[][] arr = {
@@ -18,12 +18,11 @@ public class Flatten_A_N_Dimention_Array {
 
         //for each loop to convert array in arr to stream and add the stream to streamList
         for (Integer[] array : arr) {
-            Arrays.stream(array)
-                    .forEach(streamList::add);
+            streamList.addAll(Arrays.asList(array));
         }
 
         //flatten the stream using toArray method
-        Integer[] flattenArray = streamList.stream().toArray(Integer[]::new);
+        Integer[] flattenArray = streamList.toArray(Integer[]::new);
 
         //print the flattened arrays
         System.out.println("Input: " + Arrays.deepToString(arr));
