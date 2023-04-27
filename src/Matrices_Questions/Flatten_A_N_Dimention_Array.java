@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//https://stackoverflow.com/questions/2569279/how-to-flatten-2d-array-to-1d-array
+//http://www.java2s.com/example/java-utility-method/matrix-flatten-index-0.html
+
+
 public class Flatten_A_N_Dimention_Array {
     public static void main(String[] args) {
 
