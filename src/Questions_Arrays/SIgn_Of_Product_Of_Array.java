@@ -17,4 +17,24 @@ public class SIgn_Of_Product_Of_Array {
 
         return sign;
     }
+
+    //Another
+    public int arraySignOfArray(int[] nums) {
+        int countNegitives = 0;
+
+        for (int n :
+                nums) {
+            if (n == 0) {
+                return 0;
+            } else if (n < 0) {
+                countNegitives++;
+            }
+        }
+
+        if (countNegitives % 2 == 0) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
 }
